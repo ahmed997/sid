@@ -1,0 +1,292 @@
+/*
+Light Gray: #A79F9F
+Dark Gray: #575653
+*/
+
+*
+{
+	box-sizing : border-box;
+}
+
+body
+{
+	background-color : #F5F5F5;
+	height           : 2500px;
+	padding          : 0;
+	margin           : 0;
+}
+
+.containeer
+{
+	width     : 100%;
+	max-width : 650px;
+	margin    : auto;
+}
+
+.nav
+{
+	background-color : #FFF;
+	width            : 100%;
+	padding          : 0;
+	margin           : 0;
+}
+
+.nav div
+{
+	display    : inline-block;
+	width      : 49%;
+	text-align : center;
+	font-size  : 24px;
+	padding    : 20px 0;
+	cursor     : pointer;
+}
+
+.nav-active
+{
+	border-bottom : 4px solid #DAB006;
+}
+
+.nav div a
+{
+	text-decoration : none;
+	color           : #DAB006;
+}
+
+.offender .box
+{
+	display          : inline-block;
+	width            : 48%;
+	background-color : #FFF;
+	margin           : 20px 0;
+	padding          : 15px 15px;
+	text-align       : center;
+	color            : #575653;
+	border-radius    : 10px;
+	cursor           : pointer;
+}
+
+.offender .box:first-of-type
+{
+	margin-right : 3.3%;
+}
+
+.offender .box i
+{
+	color : #DAB006;
+}
+
+.offender .box p:first-of-type
+{
+	font-size : 60px;
+	margin    : 10px 0;
+}
+
+.offender .box p:last-of-type
+{
+	font-size : 14px;
+	color     : #A79F9F;
+}
+
+.offender .box p:last-of-type span
+{
+	display : block;
+}
+
+.offender .box .dist p
+{
+	display    : inline-block;
+	width      : 49%;
+	text-align : left;
+	color      : #A79F9F;
+}
+
+.offender .box .dist div
+{
+	width      : 49%;
+	display    : inline-block;
+	text-align : right;
+	color      : #A79F9F;
+}
+
+.offender .box .dist div span:first-of-type
+{
+	background-color : #00DE4D;
+	border-radius    : 50%;
+	width            : 10px;
+	height           : 10px;
+	display          : inline-block;
+}
+
+.offender .box:last-child .dist div span:first-of-type
+{
+	background-color : #D50;
+	border-radius    : 50%;
+	width            : 10px;
+	height           : 10px;
+	display          : inline-block;
+}
+
+.bg-orange
+{
+	background : linear-gradient(to bottom, rgba(218, 200, 1, 1) 0%, rgba(215, 172, 1, 1) 100%);
+}
+
+.color-white
+{
+	color : #FFF !important;
+}
+
+.person
+{
+	background-color : #FFF;
+	border-radius    : 10px;
+	overflow         : hidden;
+	margin-top       : 20px;
+	margin-bottom    : 20px;
+	height           : 280px;
+}
+
+.person img
+{
+	float   : left;
+	padding : 0;
+	width   : 50%;
+	height  : 280px;
+}
+
+.person .per-det
+{
+	float        : left;
+	padding-left : 20px;
+	padding-top  : 20px;
+}
+
+.person .per-det > span
+{
+	padding          : 10px 15px;
+	background-color : #DAB006;
+	color            : #FFF;
+	border-radius    : 10px;
+}
+
+.person .per-det h3
+{
+	color          : #575653;
+	padding-top    : 10px;
+	padding-bottom : 10px;
+}
+
+.person .per-det p
+{
+	color       : #A79F9F;
+	font-size   : 14px;
+	line-height : 8px;
+}
+
+.person .per-det > p:last-of-type
+{
+	padding-top : 10px;
+}
+
+.person .per-det > p:last-of-type span
+{
+	padding-top : 10px;
+	display     : block;
+}
+
+.person .per-det div i
+{
+	color         : #DAB006;
+	padding-right : 10px;
+}
+
+.clear-fix
+{
+	clear : both;
+}
+
+@media (min-width : 576px) and (max-width : 768px)
+{
+	.offender .box:first-of-type
+	{
+		margin-right : 2.8%;
+	}
+	
+}
+
+@media (max-width : 576px)
+{
+	.map
+	{
+		padding : 0 10px;
+	}
+	
+	.offender .box
+	{
+		width : 46%;
+	}
+	
+	.offender .box:first-of-type
+	{
+		margin-right : 0;
+	}
+	
+	.offender .box
+	{
+		margin-right : 2%;
+		margin-left  : 2%;
+	}
+	
+	.offender .box .dist div, .offender .box .dist p
+	{
+		text-align : center;
+	}
+	
+	.persons
+	{
+		padding : 0 10px;
+	}
+	
+	.person
+	{
+		height : 240px;
+	}
+	
+	.person img
+	{
+		width  : 45%;
+		height : 240px;
+	}
+	
+	.person .per-det
+	{
+		padding-left : 10px;
+	}
+	
+	.person .per-det
+	{
+		width : 55%;
+	}
+	
+	.person .per-det h3
+	{
+		padding-bottom : 0;
+		padding-top    : 0;
+	}
+	
+	.person .per-det p
+	{
+		font-size : 12px;
+	}
+	
+	.person .per-det div i
+	{
+		font-size     : 14px;
+		padding-right : 0;
+	}
+	
+	.person .per-det div span
+	{
+		font-size : 12px;
+	}
+}
